@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NodeJS WorkShop2</title>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onLoad="displayData()">
+<script src="dom.js"></script> 
+<div class="header"> <h1>Database (NeDB) manipulation</h1>
+<img src="angry.png" style="width:100px; height:100px;">
+</div>
+<div class="leftPost"> 
+    <form class="submissionForm">
+        <label>Task title: </label><br>
+        <input type="text" class="txt txt-info" id="name" required>
+        <br><br>
+        <label>Task description: </label><br>
+        <textarea rows="7" cols="40" id="desc" required></textarea>
+        <br>
+        <input type="submit" value="Save Task" class="btn btn-info" onClick="verificationForm()">
+    </form>
+</div>
+<div class="rightPost" id="rightPost"> </div>
+<div class="bottom" id="bottom"> </div> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mo-js/0.288.2/mo.min.js"></script>
+<script src="anime.js">
+</script>
+</body>
+</html>
