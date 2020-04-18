@@ -1,8 +1,3 @@
-//function setup(){
-//    noCanvas();
-//    const video = createCapture(VIDEO);
-//    video.size(300, 250);
-//}
 
 async function displayData(){
     const response = await fetch('/route');
@@ -19,7 +14,6 @@ async function displayData(){
     rightPost.addEventListener('click', e => {
         var clickedID = e.target.id;
         displayDesc(clickedID);
-        //animate();
     });
 }
 
@@ -33,15 +27,15 @@ async function displayDesc(id){
 }
 
 function verificationForm(){
-
     var name = document.getElementById('name').value;
     var description = document.getElementById('desc').value;
     var d = new Date();
     if(!name || !description){
-        alert('Fill form properly');
-        return;
+        toTheBox.boxMsg("Fillout the Form", "gray", "blue", "20px");
+        //return;
     } else {
     insertData(name, description, d)
+        .then (animate())
         .catch(err => alert("Error..."));
     }
 }
