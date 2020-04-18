@@ -5,7 +5,7 @@ to do list: this app allows users to enter tasks and tasks' description/informat
 to store the data with a unique ID and the date it was created. the app then displays a list of to do tasks and their 
 corresponding data. Also, upon clicking the task header, the app will show the description related to the item clicked.
 
-this project also include an animation JS file to display an animated motion using MOJS. This file is deactivated (not linked to the index file) 
+this project also include an animation JS file to display an animated motion using MOJS. 
 
 Next update:
 1. Add delete function for records
