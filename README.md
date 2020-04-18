@@ -8,5 +8,5 @@ corresponding data. Also, upon clicking the task header, the app will show the d
 this project also include an animation JS file to display an animated motion using MOJS. This file is deactivated (not linked to the index file) 
 
 Next update:
-1. link the animated javascript file to the index.html file
-2. add "capture image" feature: the user will be able to save an image to their tasks description
+1. Add delete function for records
+2. Add "capture image" feature: the user will be able to save an image to their tasks description
